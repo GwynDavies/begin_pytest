@@ -1,0 +1,7 @@
+        INP
+        STA LABEL1
+        INP
+        ADD LABEL1
+        OUT
+        HLT
+LABEL1  DAT  0
