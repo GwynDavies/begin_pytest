@@ -55,6 +55,7 @@ class InpBuffer():
                 value_input = int(input_value)
                 value_accepted = True
             else:
+                value_input = None
                 ErrorWarn.warn_input_not_integer_or_float(input_value)
 
         return value_input
