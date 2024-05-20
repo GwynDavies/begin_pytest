@@ -41,7 +41,7 @@ class Memory:
             for cell_counter in range(5):
                 cell_offset = (cell_row*10) + cell_counter
                 value = format_cell_value(self.cells[cell_offset])
-                print(f'  { value:>18} ',  end='', file=output)
+                print(f'  {value:>18} ',  end='', file=output)
             print(f'    {cell_row*10:3} ', end='', file=output)
             print(file=output)
 
@@ -50,7 +50,7 @@ class Memory:
             for cell_counter in range(5, 10):
                 cell_offset = (cell_row*10) + cell_counter
                 value = format_cell_value(self.cells[cell_offset])
-                print(f'  { value:>18} ',  end='', file=output)
+                print(f'  {value:>18} ',  end='', file=output)
             print(file=output)
 
         # Footer
