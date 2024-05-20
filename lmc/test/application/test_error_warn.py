@@ -24,10 +24,10 @@ class TestErrorWarn:
         when an input value was not an integer or floating point value"""
 
         # When I issue a 'Warning' for the user, that I was expecting an integer or floating point value
-
-        error_message_text = "test error message"
+        error_message_prefix = 'Input value was not an integer or floating point number, found'
+        error_message_text = 'test error message'
         expected_message = '\nWARN ERROR ...\n' + \
-            f'\nInput value was not an integer or floating point number, found - {error_message_text}\n\n'
+            f'\n{error_message_prefix} - {error_message_text}\n\n'
 
         actual_message = CaptureStdout.redirect(
             ErrorWarn.warn_input_not_integer_or_float, error_message_text)
