@@ -24,7 +24,7 @@ For the associated YouTube videos, see the following playlist:
 ### Python
 You will need to have some basic experience with Python programming
 
-You will also need to have Python **3.7+** installed. The version can be checked
+You will also need to have Python **3.10+** installed. The version can be checked
 by using the -V argument with your Python installation:
 
 ```commandline
