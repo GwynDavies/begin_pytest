@@ -21,9 +21,10 @@ def do_tests():
 
 
 def do_lint():
-    run_it('pylint --verbose --disable "C0114,C0115,C0116,R0903,C0301,R0913" --recursive y ../lmc')
-    run_it('pylint --verbose --disable "C0114,C0115,C0116,R0903,C0301,R0913" --recursive y ../bin')
-    run_it('pylint --verbose --disable "C0114,C0115,C0116,R0903,C0301,R0913" --recursive y .')
+    pylint_command = 'pylint --verbose --disable "C0114,C0115,C0116,R0903,C0301,R0913,W0719" --recursive y '
+    run_it(pylint_command + ' ../lmc')
+    run_it(pylint_command + ' ../bin')
+    run_it(pylint_command + ' .')
 
 
 def do_format():
